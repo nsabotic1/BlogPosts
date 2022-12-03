@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRubicon", "TaskRubicon\TaskRubicon.csproj", "{EF4CCA08-093F-42E4-9745-656C9377546A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRubiconTest", "TaskRubiconTest\TaskRubiconTest.csproj", "{2858B805-5096-4427-A796-C4C88E819484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EF4CCA08-093F-42E4-9745-656C9377546A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF4CCA08-093F-42E4-9745-656C9377546A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF4CCA08-093F-42E4-9745-656C9377546A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2858B805-5096-4427-A796-C4C88E819484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2858B805-5096-4427-A796-C4C88E819484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2858B805-5096-4427-A796-C4C88E819484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2858B805-5096-4427-A796-C4C88E819484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
