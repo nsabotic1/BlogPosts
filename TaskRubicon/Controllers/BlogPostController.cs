@@ -53,7 +53,7 @@ namespace TaskRubicon.Controllers
             try
             {
                 var serviceResponse = await _blogPostService.DeleteBlogPost(slug);
-                if (serviceResponse.BlogPost == null)
+                if (serviceResponse.BlogPosts == null)
                 {
                     return NotFound(serviceResponse);
                 }

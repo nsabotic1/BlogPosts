@@ -86,9 +86,9 @@ namespace TaskRubicon.Services.BlogPostService
             return serviceResponse;
         }
 
-        public async Task<ServiceResponseBlogPost<List<GetBlogPostDto>>> DeleteBlogPost(string slug)
+        public async Task<ServiceResponseBlogPosts<List<GetBlogPostDto>>> DeleteBlogPost(string slug)
         {
-            var serviceResponse = new ServiceResponseBlogPost<List<GetBlogPostDto>>();
+            var serviceResponse = new ServiceResponseBlogPosts<List<GetBlogPostDto>>();
             try
             {
                 var blog = await _context.BlogPosts
@@ -101,9 +101,10 @@ namespace TaskRubicon.Services.BlogPostService
                 }
                 _context.BlogPosts.Remove(blog);
                 await _context.SaveChangesAsync();
-                serviceResponse.BlogPost = _context.BlogPosts
+                serviceResponse.BlogPosts = _context.BlogPosts
                     .Select(b => _mapper.Map<GetBlogPostDto>(b))
                     .ToList();
+                serviceResponse.PostsCount = serviceResponse.BlogPosts.Count();
                 serviceResponse.Message = "Blog post deleted!";
             }
             catch (Exception ex)
