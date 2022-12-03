@@ -12,6 +12,7 @@
   * AutoMapper.Extensions.Microsoft.DependencyInjection (12.0.0)
   * System.Text.Encoding.CodePages
   * coverlet.collector
+  * xunit
   * xunit.runner.visualstudio
   * System.Text.Encoding.CodePages
   * Swashbuckle.AspNetCore
