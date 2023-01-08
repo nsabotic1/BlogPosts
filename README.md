@@ -1,6 +1,6 @@
-# Rubicon task
+# Blog Posts
 -------------------------
-
+Application in which the user can perform CRUD operations on Blogs, and add and delete comments for a specific Blog.
 ## Run and build
 
 * Install .NET 6 SDK.
